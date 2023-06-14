@@ -1,0 +1,39 @@
+{% extends 'admin/base.html' %}
+
+{% block content %}
+
+<form action="" method="POST" enctype="multipart/form-data">
+    <div class="form-group">
+        <label style="color: white;">Title:</label>
+        <input type="text" class="form-control" name="title" > 
+    </div>
+    <div class="form-group">
+        <label style="color: white;">Text:</label>
+        <input type="text" class="form-control" name="text" > 
+    </div>
+    <div class="form-group">
+        <label style="color: white;">Linkedin link:</label>
+        <input type="text" class="form-control" name="linkedin" > 
+    </div>
+    <div class="form-group">
+        <label style="color: white;">Github link:</label>
+        <input type="text" class="form-control" name="github" > 
+    </div>
+    <div class="form-group">
+        <label style="color: white;">Facebook link:</label>
+        <input type="text" class="form-control" name="fb" > 
+    </div>
+    <!-- <div class="form-group">
+        <label style="color: white;">Twitter link:</label>
+        <input type="text" class="form-control" name="twitter" > 
+    </div> -->
+    <div class="form-group">
+        <label style="color: white;">Image:</label>
+        <input type="file" class="form-control" name="file">
+    </div>
+    <div class="form-group">
+        <button class="btn btn-primary" type="submit">Add About</button>
+    </div>
+</form>
+
+{% endblock %}
